@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Security Headers Meta Tags for Static Hosting -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:; font-src 'self' https: data:;">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+
     <title>Adam Ryan Ayliffe | Infrastructure Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -60,7 +67,7 @@
                 <a href="#education" class="hover:text-cyan-400 transition">Education & Certs</a>
             </div>
             <div class="flex items-center space-x-4">
-                <a href="Adam_Ayliffe_CV.docx" download="Adam_Ayliffe_CV.pdf" class="hidden sm:inline-flex items-center space-x-2 bg-slate-900 hover:bg-slate-800 text-cyan-400 font-semibold px-4 py-2.5 rounded-xl text-sm transition border border-cyan-500/30 shadow-lg">
+                <a href="Adam_Ayliffe_Cdocx" download="Adam_Ayliffe_CV.pdf" class="hidden sm:inline-flex items-center space-x-2 bg-slate-900 hover:bg-slate-800 text-cyan-400 font-semibold px-4 py-2.5 rounded-xl text-sm transition border border-cyan-500/30 shadow-lg">
                     <i class="fa-solid fa-file-pdf text-xs"></i>
                     <span>Download CV</span>
                 </a>
