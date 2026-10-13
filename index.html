@@ -1,7 +1,9 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Ryan Ayliffe | Infrastructure Engineer</title>
+    <title>Adam Ryan Ayliffe | Infrastructure Engineer & Reliability Specialist</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Icons -->
@@ -15,29 +17,34 @@
             font-family: 'Inter', sans-serif;
         }
         .glass-panel {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(51, 65, 85, 0.4);
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-panel:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.15);
         }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden">
 
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/60">
+    <!-- Sticky Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-xl border-b border-slate-800/80 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
             <a href="#hero" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-slate-950 text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition shrink-0">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-400 to-blue-600 flex items-center justify-center font-extrabold text-slate-950 text-lg shadow-lg shadow-cyan-500/30 group-hover:scale-105 transition shrink-0">
                     AA
                 </div>
                 <div class="flex flex-col">
                     <span class="text-sm sm:text-base font-extrabold tracking-tight text-white group-hover:text-cyan-400 transition truncate max-w-[160px] sm:max-w-none">Adam Ryan Ayliffe</span>
-                    <span class="text-[11px] sm:text-xs font-medium text-slate-400">Infrastructure Engineer</span>
+                    <span class="text-[11px] sm:text-xs font-medium text-cyan-400/90 tracking-wide">Infrastructure Engineer</span>
                 </div>
             </a>
             
             <!-- Desktop Navigation Links -->
-            <div class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-300">
+            <div class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-cyan-400 transition">Profile</a>
                 <a href="#competencies" class="hover:text-cyan-400 transition">Competencies</a>
                 <a href="#work" class="hover:text-cyan-400 transition">Code Work</a>
@@ -52,7 +59,7 @@
                     <i class="fa-solid fa-file-word text-xs"></i>
                     <span>Download CV</span>
                 </a>
-                <a href="mailto:ADAM.AYLIFFE2018@GMAIL.COM" class="hidden xs:inline-flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-4 sm:px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-cyan-500/20">
+                <a href="mailto:ADAM.AYLIFFE2018@GMAIL.COM" class="hidden xs:inline-flex items-center space-x-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-4 sm:px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-cyan-500/25">
                     <i class="fa-solid fa-paper-plane text-xs"></i>
                     <span>Contact</span>
                 </a>
@@ -65,7 +72,7 @@
         </div>
 
         <!-- Mobile Menu Overlay Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-slate-950/95 backdrop-blur-2xl border-b border-slate-800/80 px-6 py-6 transition-all duration-300 shadow-2xl">
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-950/98 backdrop-blur-2xl border-b border-slate-800 px-6 py-6 transition-all duration-300 shadow-2xl">
             <div class="flex flex-col space-y-4 text-base font-medium">
                 <a href="#about" class="mobile-link text-slate-300 hover:text-cyan-400 py-2 border-b border-slate-900/60 flex items-center justify-between">
                     <span>Profile</span>
@@ -102,13 +109,14 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex items-center justify-center relative pt-32 sm:pt-40 pb-20 px-4 sm:px-6">
         <div class="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-center">
-            <div class="w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] bg-cyan-500/10 rounded-full blur-[120px]"></div>
+            <div class="w-[350px] h-[350px] sm:w-[650px] sm:h-[650px] bg-cyan-500/10 rounded-full blur-[140px]"></div>
         </div>
 
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center space-x-2 bg-cyan-500/10 border border-cyan-500/20 px-4 py-2 rounded-full text-cyan-400 text-xs sm:text-sm font-semibold mb-6 shadow-inner">
+            <div class="inline-flex items-center space-x-2.5 bg-cyan-500/10 border border-cyan-500/30 px-4 py-2 rounded-full text-cyan-400 text-xs sm:text-sm font-semibold mb-6 shadow-inner">
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
                 <span>Infrastructure & Reliability Engineer</span>
             </div>
@@ -118,7 +126,7 @@
             </h1>
             
             <p class="text-slate-300 text-base sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
-                Over 7 years delivering enterprise network security, cloud deployments, firewall administration, and automated workflow architecture across hybrid environments.
+                Over 7 years delivering enterprise network security, cloud deployments, firewall administration, and automated workflow architecture across hybrid environments[cite: 1].
             </p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -132,15 +140,15 @@
             </div>
 
             <div class="mt-16 pt-12 border-t border-slate-900 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-slate-400 text-xs sm:text-sm">
-                <div class="flex items-center justify-center space-x-3 bg-slate-900/40 py-3.5 px-4 rounded-xl border border-slate-800/60">
+                <div class="flex items-center justify-center space-x-3 bg-slate-900/50 py-3.5 px-4 rounded-xl border border-slate-800/80">
                     <i class="fa-solid fa-location-dot text-cyan-400 shrink-0"></i>
                     <span>London, United Kingdom</span>
                 </div>
-                <div class="flex items-center justify-center space-x-3 bg-slate-900/40 py-3.5 px-4 rounded-xl border border-slate-800/60">
+                <div class="flex items-center justify-center space-x-3 bg-slate-900/50 py-3.5 px-4 rounded-xl border border-slate-800/80">
                     <i class="fa-solid fa-phone text-cyan-400 shrink-0"></i>
                     <span>07487 613 849</span>
                 </div>
-                <div class="flex items-center justify-center space-x-3 bg-slate-900/40 py-3.5 px-4 rounded-xl border border-slate-800/60">
+                <div class="flex items-center justify-center space-x-3 bg-slate-900/50 py-3.5 px-4 rounded-xl border border-slate-800/80">
                     <i class="fa-solid fa-envelope text-cyan-400 shrink-0"></i>
                     <span class="truncate">ADAM.AYLIFFE2018@GMAIL.COM</span>
                 </div>
@@ -148,6 +156,7 @@
         </div>
     </section>
 
+    <!-- Professional Profile Overview -->
     <section id="about" class="py-20 sm:py-24 relative bg-slate-900/30 border-t border-slate-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12 sm:mb-16">
@@ -158,10 +167,10 @@
             <div class="glass-panel p-6 sm:p-10 md:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none"></div>
                 <p class="text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed mb-6 font-normal">
-                    Results-driven Infrastructure Engineer with over 7 years of progressive experience delivering high-level technical support, infrastructure deployment, and project delivery across on-premises, hybrid, and cloud environments.
+                    Results-driven Infrastructure Engineer with over 7 years of progressive experience delivering high-level technical support, infrastructure deployment, and project delivery across on-premises, hybrid, and cloud environments[cite: 1].
                 </p>
                 <p class="text-slate-400 text-sm sm:text-base md:text-lg leading-relaxed mb-8">
-                    Proven expertise in network security, server administration, firewall configuration, and Microsoft 365 migrations. Adept at solving complex technical issues, mentoring junior engineers, and implementing robust infrastructure solutions that enhance business performance.
+                    Proven expertise in network security, server administration, firewall configuration, and Microsoft 365 migrations. Adept at solving complex technical issues, mentoring junior engineers, and implementing robust infrastructure solutions that enhance business performance[cite: 1].
                 </p>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-slate-800/80 text-center">
@@ -182,6 +191,7 @@
         </div>
     </section>
 
+    <!-- Core Competencies -->
     <section id="competencies" class="py-20 sm:py-24 relative bg-slate-950 border-t border-slate-900">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12 sm:mb-16">
@@ -191,88 +201,97 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Card 1 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 group">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 group">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 transition shadow-inner">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Networking & Security</h3>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        FortiGate, WatchGuard, DrayTek, Unifi USG, VLANs, VPNs, Cisco AnyConnect, PRTG, SolarWinds.
+                        FortiGate, WatchGuard, DrayTek, Unifi USG, VLANs, VPNs, Cisco AnyConnect, PRTG, SolarWinds[cite: 1].
                     </p>
                 </div>
                 
                 <!-- Card 2 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 group">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 group">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 transition shadow-inner">
                         <i class="fa-solid fa-server"></i>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Server & Cloud Platforms</h3>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        Nutanix VM deployment, Windows Server (AD, DNS, DHCP, Group Policy), Azure AD, SharePoint Online, Hybrid Exchange, Microsoft 365 Admin Centre.
+                        Nutanix VM deployment, Windows Server (AD, DNS, DHCP, Group Policy), Azure AD, SharePoint Online, Hybrid Exchange, Microsoft 365 Admin Centre[cite: 1].
                     </p>
                 </div>
                 
                 <!-- Card 3 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 group">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 group">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 transition shadow-inner">
                         <i class="fa-solid fa-database"></i>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Data Protection & Backup</h3>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        HYCU, Redstore, Datto, Veeam backup and disaster recovery solutions.
+                        HYCU, Redstore, Datto, Veeam backup and disaster recovery solutions[cite: 1].
                     </p>
                 </div>
                 
                 <!-- Card 4 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 group">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 group">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 transition shadow-inner">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Tools & Ticketing</h3>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        Autotask, ServiceNow, Sentinel, Avaya, Zoom, Teams, VMware, Power Automate.
+                        Autotask, ServiceNow, Sentinel, Avaya, Zoom, Teams, VMware, Power Automate[cite: 1].
                     </p>
                 </div>
                 
                 <!-- Card 5 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 group">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 group">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 transition shadow-inner">
                         <i class="fa-solid fa-diagram-project"></i>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Project Delivery</h3>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        Network deployments, firewall migrations, server upgrades, SharePoint migrations, data centre operations, automated workflow architecture.
+                        Network deployments, firewall migrations, server upgrades, SharePoint migrations, data centre operations, automated workflow architecture[cite: 1].
                     </p>
                 </div>
                 
                 <!-- Card 6 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 group">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 group">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-xl sm:text-2xl mb-5 sm:mb-6 group-hover:scale-110 transition shadow-inner">
                         <i class="fa-solid fa-code"></i>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-white">Coding & Scripting</h3>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        HTML5, CSS, PHP, MySQL, workflow architecture and HTTP automation scripts.
+                        HTML5, CSS, PHP, MySQL, workflow architecture and HTTP automation scripts[cite: 1].
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Code Work & Portals (Enhanced with interactive filter buttons) -->
     <section id="work" class="py-20 sm:py-24 relative bg-slate-900/30 border-t border-slate-900">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16">
+            <div class="text-center mb-10 sm:mb-12">
                 <span class="text-cyan-400 font-bold text-xs uppercase tracking-widest block mb-2">Live Deployments & Architecture</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">My Code Work & Portals</h2>
                 <p class="text-slate-400 max-w-2xl mx-auto text-xs sm:text-sm md:text-base">
-                    Explore live infrastructure status dashboards, cPanel/WHM server authentication management systems, and AI support automation systems developed for TechGrid Systems.
+                    Explore live infrastructure status dashboards, cPanel/WHM server authentication management systems, and AI support automation systems developed for TechGrid Systems[cite: 1].
                 </p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+                <button onclick="filterWork('all')" id="filter-all" class="work-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-cyan-500 text-slate-950 transition shadow-md">All Projects</button>
+                <button onclick="filterWork('dashboard')" id="filter-dashboard" class="work-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition">Dashboards</button>
+                <button onclick="filterWork('server')" id="filter-server" class="work-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition">Server Mgmt</button>
+                <button onclick="filterWork('ai')" id="filter-ai" class="work-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition">AI Portals</button>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
                 
                 <!-- Example 1: Status TechGrid Systems -->
-                <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between hover:border-cyan-500/50 transition duration-300 group">
+                <div class="work-card glass-panel p-6 rounded-3xl flex flex-col justify-between transition duration-300 group" data-category="dashboard">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">System Status</span>
@@ -280,10 +299,9 @@
                         </div>
                         <h3 class="text-lg sm:text-xl font-bold text-white mb-2">TechGrid System Status</h3>
                         <p class="text-slate-400 text-xs sm:text-sm mb-6 leading-relaxed">
-                            Real-time infrastructure monitoring dashboard tracking core nodes, DNS, network links, and active cloud services uptime.
+                            Real-time infrastructure monitoring dashboard tracking core nodes, DNS, network links, and active cloud services uptime[cite: 1].
                         </p>
                         
-                        <!-- Screenshot Preview container with placeholder/fallback -->
                         <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 mb-6 shadow-xl group-hover:border-cyan-500/40 transition">
                             <div class="bg-slate-900 px-4 py-2 border-b border-slate-800 flex items-center space-x-2">
                                 <div class="w-2.5 h-2.5 rounded-full bg-rose-500"></div>
@@ -293,7 +311,7 @@
                             </div>
                             <div class="p-3 bg-slate-950 flex flex-col items-center justify-center">
                                 <img src="images/screenshot1.png" alt="TechGrid System Status Preview" class="rounded-xl w-full h-40 sm:h-48 object-cover opacity-85 group-hover:opacity-100 transition">
-                                <p class="text-[11px] text-slate-500 mt-2 text-center">Screenshot 1: Live Status Dashboard Interface</p>
+                                <p class="text-[11px] text-slate-500 mt-2 text-center">Screenshot 1: Live Status Dashboard Interface[cite: 1]</p>
                             </div>
                         </div>
                     </div>
@@ -307,7 +325,7 @@
                 </div>
 
                 <!-- Example 2: cPanel TechGrid Systems -->
-                <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between hover:border-cyan-500/50 transition duration-300 group">
+                <div class="work-card glass-panel p-6 rounded-3xl flex flex-col justify-between transition duration-300 group" data-category="server">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">Server Management</span>
@@ -315,10 +333,9 @@
                         </div>
                         <h3 class="text-lg sm:text-xl font-bold text-white mb-2">cPanel / WHM Authentication</h3>
                         <p class="text-slate-400 text-xs sm:text-sm mb-6 leading-relaxed">
-                            Secure server management portal with TLS 1.3 encryption, root privileged session authentication, and WHM modules.
+                            Secure server management portal with TLS 1.3 encryption, root privileged session authentication, and WHM modules[cite: 1].
                         </p>
                         
-                        <!-- Screenshot Preview container -->
                         <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 mb-6 shadow-xl group-hover:border-cyan-500/40 transition">
                             <div class="bg-slate-900 px-4 py-2 border-b border-slate-800 flex items-center space-x-2">
                                 <div class="w-2.5 h-2.5 rounded-full bg-rose-500"></div>
@@ -329,11 +346,11 @@
                             <div class="p-3 bg-slate-950 grid grid-cols-2 gap-2">
                                 <div>
                                     <img src="images/screenshot2.jpg" alt="WHM Login Portal" class="rounded-lg w-full h-28 sm:h-32 object-cover opacity-85 group-hover:opacity-100 transition">
-                                    <p class="text-[10px] text-slate-500 mt-1 text-center">Screenshot 2: Auth Screen</p>
+                                    <p class="text-[10px] text-slate-500 mt-1 text-center">Screenshot 2[cite: 1]</p>
                                 </div>
                                 <div>
                                     <img src="images/screenshot3.png" alt="WHM Server Management" class="rounded-lg w-full h-28 sm:h-32 object-cover opacity-85 group-hover:opacity-100 transition">
-                                    <p class="text-[10px] text-slate-500 mt-1 text-center">Screenshot 3: WHM Panel</p>
+                                    <p class="text-[10px] text-slate-500 mt-1 text-center">Screenshot 3[cite: 1]</p>
                                 </div>
                             </div>
                         </div>
@@ -348,7 +365,7 @@
                 </div>
 
                 <!-- Example 3: AI TechGrid Systems -->
-                <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between hover:border-cyan-500/50 transition duration-300 group">
+                <div class="work-card glass-panel p-6 rounded-3xl flex flex-col justify-between transition duration-300 group" data-category="ai">
                     <div>
                         <div class="flex items-center justify-between mb-4">
                             <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">AI Assistance</span>
@@ -356,10 +373,9 @@
                         </div>
                         <h3 class="text-lg sm:text-xl font-bold text-white mb-2">TechGrid Systems AI Portal</h3>
                         <p class="text-slate-400 text-xs sm:text-sm mb-6 leading-relaxed">
-                            Interactive AI assistant ("Techgrid Systems AI Bot") designed to guide users through helpdesk queries, live system health, and automated workflows.
+                            Interactive AI assistant ("Techgrid Systems AI Bot") designed to guide users through helpdesk queries, live system health, and automated workflows[cite: 1].
                         </p>
                         
-                        <!-- Screenshot Preview container -->
                         <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 mb-6 shadow-xl group-hover:border-cyan-500/40 transition">
                             <div class="bg-slate-900 px-4 py-2 border-b border-slate-800 flex items-center space-x-2">
                                 <div class="w-2.5 h-2.5 rounded-full bg-rose-500"></div>
@@ -369,7 +385,7 @@
                             </div>
                             <div class="p-3 bg-slate-950 flex flex-col items-center justify-center">
                                 <img src="images/screenshot4.png" alt="TechGrid AI Portal Preview" class="rounded-xl w-full h-40 sm:h-48 object-cover opacity-85 group-hover:opacity-100 transition">
-                                <p class="text-[11px] text-slate-500 mt-2 text-center">Screenshot 4: Techgrid Systems Bot AI Assistant Interface</p>
+                                <p class="text-[11px] text-slate-500 mt-2 text-center">Screenshot 4: AI Assistant Interface[cite: 1]</p>
                             </div>
                         </div>
                     </div>
@@ -386,6 +402,7 @@
         </div>
     </section>
 
+    <!-- Professional Experience -->
     <section id="experience" class="py-20 sm:py-24 relative bg-slate-950 border-t border-slate-900">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12 sm:mb-16">
@@ -409,13 +426,13 @@
                             </span>
                         </div>
                         <ul class="space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed list-disc list-inside">
-                            <li>Manage and configure FortiGate firewalls and Unifi controllers to enhance client network security and performance.</li>
-                            <li>Deliver SharePoint migration projects from legacy environments to Microsoft 365.</li>
-                            <li>Administer Nutanix platform for virtual machine builds and deployments.</li>
-                            <li>Conduct data centre visits for hardware installations, network troubleshooting, and infrastructure upgrades.</li>
-                            <li>Provide 3rd line escalation support for complex issues, mentoring 1st line engineers.</li>
-                            <li>Monitor systems via PRTG and manage backups using HYCU and Redstore solutions.</li>
-                            <li><strong>Power Automate & Infrastructure Automation:</strong> Develop and implement HTTP requests to Autotask to streamline service desk operations, configure JSON files for ticket generation, and design webhooks for Cloud Radial integration for new starter account automation.</li>
+                            <li>Manage and configure FortiGate firewalls and Unifi controllers to enhance client network security and performance[cite: 1].</li>
+                            <li>Deliver SharePoint migration projects from legacy environments to Microsoft 365[cite: 1].</li>
+                            <li>Administer Nutanix platform for virtual machine builds and deployments[cite: 1].</li>
+                            <li>Conduct data centre visits for hardware installations, network troubleshooting, and infrastructure upgrades[cite: 1].</li>
+                            <li>Provide 3rd line escalation support for complex issues, mentoring 1st line engineers[cite: 1].</li>
+                            <li>Monitor systems via PRTG and manage backups using HYCU and Redstore solutions[cite: 1].</li>
+                            <li><strong>Power Automate & Infrastructure Automation:</strong> Develop and implement HTTP requests to Autotask to streamline service desk operations, configure JSON files for ticket generation, and design webhooks for Cloud Radial integration for new starter account automation[cite: 1].</li>
                         </ul>
                     </div>
                 </div>
@@ -434,10 +451,10 @@
                             </span>
                         </div>
                         <ul class="space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed list-disc list-inside">
-                            <li>Configured firewalls, switches, and Unifi Cloud networks for SME and enterprise clients.</li>
-                            <li>Managed Active Directory environments, implementing group policies and access controls.</li>
-                            <li>Delivered project-based deployments including network expansions and cloud migrations.</li>
-                            <li>Performed on-site customer visits for infrastructure upgrades and troubleshooting.</li>
+                            <li>Configured firewalls, switches, and Unifi Cloud networks for SME and enterprise clients[cite: 1].</li>
+                            <li>Managed Active Directory environments, implementing group policies and access controls[cite: 1].</li>
+                            <li>Delivered project-based deployments including network expansions and cloud migrations[cite: 1].</li>
+                            <li>Performed on-site customer visits for infrastructure upgrades and troubleshooting[cite: 1].</li>
                         </ul>
                     </div>
                 </div>
@@ -456,11 +473,11 @@
                             </span>
                         </div>
                         <ul class="space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed list-disc list-inside">
-                            <li>Deployed and managed WatchGuard, Unifi USG, and DrayTek firewalls with VLAN segmentation.</li>
-                            <li>Oversaw print management solutions using AD security groups and group policies.</li>
-                            <li>Executed network deployment projects including cabling, switch installations, and site audits.</li>
-                            <li>Supported Office 365, Active Directory, DHCP, and Group Policy environments.</li>
-                            <li>Managed ticketing (Autotask) and remote support (Datto) for 100+ client environments.</li>
+                            <li>Deployed and managed WatchGuard, Unifi USG, and DrayTek firewalls with VLAN segmentation[cite: 1].</li>
+                            <li>Oversaw print management solutions using AD security groups and group policies[cite: 1].</li>
+                            <li>Executed network deployment projects including cabling, switch installations, and site audits[cite: 1].</li>
+                            <li>Supported Office 365, Active Directory, DHCP, and Group Policy environments[cite: 1].</li>
+                            <li>Managed ticketing (Autotask) and remote support (Datto) for 100+ client environments[cite: 1].</li>
                         </ul>
                     </div>
                 </div>
@@ -479,12 +496,12 @@
                             </span>
                         </div>
                         <ul class="space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed list-disc list-inside">
-                            <li><strong>Microsoft 365:</strong> Licensing, creating accounts, creating shared mailboxes, sharepoint security groups.</li>
-                            <li><strong>Active Directory:</strong> Password Resets, new account creations.</li>
-                            <li><strong>DHCP:</strong> Reserving IPs and binding them with MAC addresses.</li>
-                            <li><strong>CCTV:</strong> Unifi / 3rd party CCTV equipment.</li>
-                            <li><strong>PRTG:</strong> Monitor customers network nodes.</li>
-                            <li>Installing Internet Lines for customers.</li>
+                            <li><strong>Microsoft 365:</strong> Licensing, creating accounts, creating shared mailboxes, sharepoint security groups[cite: 1].</li>
+                            <li><strong>Active Directory:</strong> Password Resets, new account creations[cite: 1].</li>
+                            <li><strong>DHCP:</strong> Reserving IPs and binding them with MAC addresses[cite: 1].</li>
+                            <li><strong>CCTV:</strong> Unifi / 3rd party CCTV equipment[cite: 1].</li>
+                            <li><strong>PRTG:</strong> Monitor customers network nodes[cite: 1].</li>
+                            <li>Installing Internet Lines for customers[cite: 1].</li>
                         </ul>
                     </div>
                 </div>
@@ -503,9 +520,9 @@
                             </span>
                         </div>
                         <ul class="space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed list-disc list-inside">
-                            <li>Administered Active Directory accounts and Microsoft 365 licences.</li>
-                            <li>Supported Hybrid Exchange configuration and troubleshooting.</li>
-                            <li>Managed ERP access for Great Plains database users.</li>
+                            <li>Administered Active Directory accounts and Microsoft 365 licences[cite: 1].</li>
+                            <li>Supported Hybrid Exchange configuration and troubleshooting[cite: 1].</li>
+                            <li>Managed ERP access for Great Plains database users[cite: 1].</li>
                         </ul>
                     </div>
                 </div>
@@ -524,9 +541,9 @@
                             </span>
                         </div>
                         <ul class="space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed list-disc list-inside">
-                            <li>Supported 1,500+ users with O365, VPN, RSA tokens, VDI, and Cisco AnyConnect.</li>
-                            <li>Led a project to reassign RSA tokens for 100+ staff prior to expiry.</li>
-                            <li>Provided 2nd line escalation and remote troubleshooting for nationwide users.</li>
+                            <li>Supported 1,500+ users with O365, VPN, RSA tokens, VDI, and Cisco AnyConnect[cite: 1].</li>
+                            <li>Led a project to reassign RSA tokens for 100+ staff prior to expiry[cite: 1].</li>
+                            <li>Provided 2nd line escalation and remote troubleshooting for nationwide users[cite: 1].</li>
                         </ul>
                     </div>
                 </div>
@@ -545,8 +562,8 @@
                             </span>
                         </div>
                         <ul class="space-y-3 text-slate-300 text-xs sm:text-sm leading-relaxed list-disc list-inside">
-                            <li>Supported Nuffield Health sites with high-priority network outage resolution.</li>
-                            <li>Troubleshot Windows 10, O365, VoIP, VMware, and networking issues.</li>
+                            <li>Supported Nuffield Health sites with high-priority network outage resolution[cite: 1].</li>
+                            <li>Troubleshot Windows 10, O365, VoIP, VMware, and networking issues[cite: 1].</li>
                         </ul>
                     </div>
                 </div>
@@ -555,6 +572,7 @@
         </div>
     </section>
 
+    <!-- Project Highlights -->
     <section id="projects" class="py-20 sm:py-24 relative bg-slate-900/30 border-t border-slate-900">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12 sm:mb-16">
@@ -564,12 +582,12 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <!-- Project 1 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 flex flex-col justify-between">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider mb-2">Automation Architecture</div>
                         <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">Workflow & Onboarding Automation</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            Architected and deployed end-to-end automated workflows using Power Automate to reduce manual entry for new starter onboarding and IT ticket processing.
+                            Architected and deployed end-to-end automated workflows using Power Automate to reduce manual entry for new starter onboarding and IT ticket processing[cite: 1].
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80">
@@ -580,12 +598,12 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 flex flex-col justify-between">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider mb-2">Cloud Infrastructure</div>
                         <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">Hybrid Cloud & Entra Migrations</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            Executed complex Swing Migrations for Microsoft Entra Connect (Azure AD Sync) and configured redundant enterprise network architectures featuring high-availability firewall clusters.
+                            Executed complex Swing Migrations for Microsoft Entra Connect (Azure AD Sync) and configured redundant enterprise network architectures featuring high-availability firewall clusters[cite: 1].
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80">
@@ -596,12 +614,12 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 flex flex-col justify-between">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider mb-2">Deployments & Upgrades</div>
                         <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">Network & SharePoint Migrations</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            Successfully led network deployments, firewall migrations, server upgrades, and large-scale SharePoint migrations from legacy on-premises environments.
+                            Successfully led network deployments, firewall migrations, server upgrades, and large-scale SharePoint migrations from legacy on-premises environments[cite: 1].
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80">
@@ -612,12 +630,12 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl hover:border-cyan-500/50 transition duration-300 flex flex-col justify-between">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider mb-2">Lifecycle Management</div>
                         <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">Hardware & Security Auditing</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                            Performed comprehensive hardware lifecycle audits across diverse networking environments, ensuring security compliance, uptime stability, and enterprise performance.
+                            Performed comprehensive hardware lifecycle audits across diverse networking environments, ensuring security compliance, uptime stability, and enterprise performance[cite: 1].
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80">
@@ -630,6 +648,7 @@
         </div>
     </section>
 
+    <!-- Education & Certifications -->
     <section id="education" class="py-20 sm:py-24 relative bg-slate-950 border-t border-slate-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12 sm:mb-16">
@@ -647,19 +666,19 @@
                     <ul class="space-y-4 text-slate-300 text-xs sm:text-sm font-medium">
                         <li class="flex items-start justify-between pb-4 border-b border-slate-800/80 gap-2">
                             <span>Microsoft Power Automate – Advanced</span>
-                            <span class="font-bold text-cyan-400 shrink-0">2025</span>
+                            <span class="font-bold text-cyan-400 shrink-0">2025[cite: 1]</span>
                         </li>
                         <li class="flex items-start justify-between pb-4 border-b border-slate-800/80 gap-2">
                             <span>Certified Engineer Load Balancer</span>
-                            <span class="font-bold text-cyan-400 shrink-0">2025</span>
+                            <span class="font-bold text-cyan-400 shrink-0">2025[cite: 1]</span>
                         </li>
                         <li class="flex items-start justify-between pb-4 border-b border-slate-800/80 gap-2">
                             <span>Fortinet Fundamentals / Associate</span>
-                            <span class="font-bold text-cyan-400 shrink-0">2024</span>
+                            <span class="font-bold text-cyan-400 shrink-0">2024[cite: 1]</span>
                         </li>
                         <li class="flex items-start justify-between pb-2 gap-2">
                             <span>Jack Petchey Award – Outstanding Contribution</span>
-                            <span class="font-bold text-cyan-400 shrink-0">2016</span>
+                            <span class="font-bold text-cyan-400 shrink-0">2016[cite: 1]</span>
                         </li>
                     </ul>
                 </div>
@@ -673,15 +692,15 @@
                     <ul class="space-y-4 text-slate-300 text-xs sm:text-sm">
                         <li class="pb-4 border-b border-slate-800/80">
                             <div class="font-bold text-white">Level 4 University Qualification</div>
-                            <div class="text-slate-400 text-[11px] sm:text-xs mt-1">Newham College, East Ham, London (Sep 2018 – Dec 2018)</div>
+                            <div class="text-slate-400 text-[11px] sm:text-xs mt-1">Newham College, East Ham, London (Sep 2018 – Dec 2018)[cite: 1]</div>
                         </li>
                         <li class="pb-4 border-b border-slate-800/80">
                             <div class="font-bold text-white">Level 1 Diploma for IT Users & Functional Skills</div>
-                            <div class="text-slate-400 text-[11px] sm:text-xs mt-1">Newham College, Stratford, London (Aug 2016 – Jul 2017)</div>
+                            <div class="text-slate-400 text-[11px] sm:text-xs mt-1">Newham College, Stratford, London (Aug 2016 – Jul 2017)[cite: 1]</div>
                         </li>
                         <li class="pb-2">
                             <div class="font-bold text-white">BTEC Business Level 1 & 2 (Pass) & NCFE Awards</div>
-                            <div class="text-slate-400 text-[11px] sm:text-xs mt-1">The Business Academy Bexley (Sep 2010 – May 2015)</div>
+                            <div class="text-slate-400 text-[11px] sm:text-xs mt-1">The Business Academy Bexley (Sep 2010 – May 2015)[cite: 1]</div>
                         </li>
                     </ul>
                 </div>
@@ -689,11 +708,12 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-slate-950 border-t border-slate-900 py-12 sm:py-16 text-center">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <h2 class="text-xl sm:text-2xl font-bold mb-3">Let's Connect</h2>
             <p class="text-slate-400 text-xs sm:text-sm max-w-md mx-auto mb-6 sm:mb-8">
-                Ready to contribute infrastructure expertise and automated workflow engineering to your team.
+                Ready to contribute infrastructure expertise and automated workflow engineering to your team[cite: 1].
             </p>
             <div class="flex justify-center space-x-4 sm:space-x-6 text-lg sm:text-xl mb-8 sm:mb-10">
                 <a href="mailto:ADAM.AYLIFFE2018@GMAIL.COM" class="w-12 h-12 rounded-2xl glass-panel flex items-center justify-center text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-solid fa-envelope"></i></a>
@@ -703,8 +723,9 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Toggle Script -->
+    <!-- Scripts: Mobile Menu & Project Filtering -->
     <script>
+        // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
@@ -728,6 +749,32 @@
                 menuIcon.classList.add('fa-bars');
             });
         });
+
+        // Project Code Work Filter System
+        function filterWork(category) {
+            const cards = document.querySelectorAll('.work-card');
+            const buttons = document.querySelectorAll('.work-filter-btn');
+
+            // Update active button styles
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-cyan-500', 'text-slate-950', 'shadow-md');
+                btn.classList.add('bg-slate-900', 'text-slate-300', 'border', 'border-slate-800');
+            });
+            const activeBtn = document.getElementById(`filter-${category}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-slate-900', 'text-slate-300', 'border', 'border-slate-800');
+                activeBtn.classList.add('bg-cyan-500', 'text-slate-950', 'shadow-md');
+            }
+
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
     </script>
 </body>
 </html>
